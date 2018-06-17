@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>舆情项目展示</title>
+    <style>
+        input{
+            border: none;
+        }
+        .c{
+            border:1px solid rgb(161, 161, 161);
+            height: 38px;
+            border-radius: 30px;
+            font-size: 16px;
+            padding-left: 15px;
+            width: 235px;
+        }
+        .cc{
+            width:500px;
+            margin: 10px auto;
+            text-align: center;
+        }
+        .ccc{
+            background: cornflowerblue;
+            font-size:18px;
+            margin:18px;
+            width: 250px;
+            height: 40px;
+            color: #fff;
+            border-radius:20px;
+        }
+        .cccc{
+            border:none;
+            background-color:cornflowerblue;
+            width:250px;
+            height:40px;
+            font-size:18px;
+            color:#fff;
+            border-radius:20px;
+        }
+        .p1{
+            color:red;
+            font-size:20px;
+            text-decoration: none;
+        }
+        a{
+            color: #fff;
+            font-size:18px;
+            text-decoration: none;
+        }
+        .a1{
+            width: 250px;
+            height: 40px;
+            line-height: 40px;
+            background-color:cornflowerblue;
+            color: #fff;
+            border-radius:20px;
+            margin: 0 auto;
+        }
+        .inp1{
+            width: 250px;
+            height: 40px;
+            background-color:cornflowerblue;
+            color: #fff;
+            position: absolute;
+            font-size: 18px;
+            border-radius:20px;
+        }
+        .inp2{
+            width: 250px;
+            height: 40px;
+            background: tomato;
+            color: #fff;
+            opacity: 0;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="cc">
+    <form action="" method="post">
+        <p>
+            <input type="text" placeholder="请输入句子" name="juzi" class="c">
+            <input type="submit"  value='情景分析' class="ccc">
+        </p>
+        <p id="id1">
+            {{sentence}}
+        </p>
+        <p>
+            {{result}}
+        </p>
+    </form>
+</div>
+
+</body>
+</html>
